@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fugaz One', cursive;
+    text-decoration: none;
+}
+
+/*todo el header*/
+header {
+    width: 100%;
+    background-color: #0098E8;
+    justify-content: center;
+    box-shadow: 0px 5px 15px #002577;
+
+}
+
+.containerSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: 20vh;
+    border-radius: 4vh;
+    box-shadow: 0px 5px 10px #002577;
+}
+
+nav {
+    width: 100%;
+
+}
+
+.containerSuperior {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav #nav-menu {
+    height: 100%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav #nav-menu #nav {
+    flex-direction: row;
+    display: flex;
+    height: 5vh;
+    list-style: none;
+    position: relative;
+    padding: 1.5vh;
+    background-color: #FFFFFF;
+    border-radius: 1.3vh;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0px 3px 8px #002577;
+    color: #0098E8;
+    transition: all 300ms ease;
+    overflow: hidden;
+    font-size: 1.8vh;
+}
+
+nav #nav-menu li img {
+    flex-direction: column;
+    height: 4.5vh;
+    align-items: center;
+}
+
+nav #nav-menu #nav:hover {
+    transform: scale(1.1);
+    background-color: #0039FF;
+    color: white;
+    box-shadow: 0px 0px 10px #002577;
+}
+
+nav #nav-menu #nav:hover a {
+    color: white;
+}
+
+#nav {
+    list-style: none;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    position: relative;
+}
+
+#vaciarCarrito {
+    display: flex;
+    background-color: red;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-carrito-contenedor {
+    width: 650px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#carrito-img {
+    width: 40px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.hola {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#VaciarCarrito {
+    background-color: red;
+    width: 150px;
+    text-align: center;
+    color: #D0F0F0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#nav-carrito {
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+    position: absolute;
+    background-color: #fff;
+    transform: translateX(125%);
+    margin-top: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #002577;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+#nav-carrito2 {
+    filter: invert(99%) sepia(6%) saturate(148%) hue-rotate(44deg) brightness(112%) contrast(100%);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.noactive {
+    opacity: 0;
+    transform: translateY(-90px);
+    transition: 0.3s;
+    display: none;
+}
+
+.active {
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.3s;
+    opacity: 1;
+    display: inline-block;
+}
+
+#carritonav {
+    margin: 20px;
+    list-style: none;
+}
+
+
+#nav-carrito-contenedor #nav-carrito #carritonav li {
+    list-style: none;
+    text-align: center;
+    color: black;
+}
+
+
+#total {
+    text-align: center;
+    font-size: 22px;
+}
+
+#textoTotal {
+    font-size: 19px;
+}
+
+/* todo el cuerpo */
+
+main {
+    margin-top: 30px;
+    background-color: #D5EBF6;
+    width: 100%;
+    position: relative;
+}
+
+.titulo {
+    color: #0039FF;
+    font-size: 2vh;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.hola {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-tarjeta {
+    margin: 15px;
+}
+
+.tarjeta {
+    width: 33vh;
+    height: 45vh;
+    background-color: #D0F0F0;
+    box-shadow: 0px 0px 15px #002577;
+    border-radius: 1.7vh;
+    margin: auto;
+}
+
+
+.tarjeta img {
+    width: 33vh;
+    height: 33vh;
+    border-radius: 1.7vh;
+    transition: 300ms ease;
+}
+
+
+.tarjeta h3 {
+    font-size: 3vh;
+    color: #6186D8;
+    text-align: center;
+}
+
+.tarjeta .textoTarjeta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarjeta .textoTarjeta .boton {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00319C;
+    width: 14vh;
+    height: 6vh;
+    text-align: center;
+    border-radius: 5px;
+    transition: 300ms ease;
+    color: white;
+    cursor: pointer;
+}
+
+.tarjeta .textoTarjeta .boton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px;
+    cursor: pointer;
+}
+
+.tarjeta .textoTarjeta .boton a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2vh;
+    overflow: hidden;
+}
+
+.tarjeta .textoTarjeta .precio {
+    color: #00319C;
+    font-size: 3vh;
+}
+
+.agregaste-contendor {
+    background-color: #002577;
+    opacity: 0;
+    transition: all 100ms;
+}
+
+.agregaste {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.agregasteactive {
+    opacity: 1;
+    transition: all 100ms;
+}
